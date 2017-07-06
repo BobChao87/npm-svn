@@ -99,7 +99,7 @@ function writeCache(data) {
 }
 
 function readCache() {
-    return fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, "utf8")) : {};
+    return {}; // fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, "utf8")) : {};
 }
 
 function validateCache(dep) {
